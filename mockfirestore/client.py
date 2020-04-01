@@ -1,4 +1,5 @@
 from mockfirestore.collection import CollectionReference
+from mockfirestore.document import DocumentReference
 from mockfirestore.batch import BatchReference
 
 class MockFirestore:
@@ -15,6 +16,9 @@ class MockFirestore:
         self._data = {}
 
     def batch(self) -> BatchReference:
-        return BatchReference()
+        return BatchReference(self._data)
+    
+    def document(self, path):
+        return DocumentReference(self._data, path, parent=None)
 
 
