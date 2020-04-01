@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="mock-firestore",
-    version="0.7.1",
+    version="0.7.2",
     author="Matt Dowds",
     description="In-memory implementation of Google Cloud Firestore for use in tests",
     long_description=long_description,
@@ -17,6 +17,7 @@ setuptools.setup(
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
         "License :: OSI Approved :: MIT License",
     ],
 )
