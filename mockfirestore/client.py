@@ -1,17 +1,5 @@
 from mockfirestore.collection import CollectionReference
-
-
-
-
-
-
-
-
-
-
-
-
-
+from mockfirestore.batch import BatchReference
 
 class MockFirestore:
 
@@ -26,5 +14,7 @@ class MockFirestore:
     def reset(self):
         self._data = {}
 
+    def batch(self) -> BatchReference:
+        return BatchReference()
 
 
